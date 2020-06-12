@@ -1,6 +1,13 @@
 # SwitchOnDock
 SwitchOnDock is a small hack that tries to improve the quality of life of users who dock their laptops by modifying the lid close event.
 
+## How to Use
+1. Compile with Visual Studio 2019.
+
+2. Drop binary into Startup folder. (Try hitting <kbd>Windows</kbd>+<kbd>R</kbd> and entering `shell:startup` to get to the Startup folder.)
+
+3. Run it to get started for the first time.
+
 ## The Problem
 Windows power policies are divided into two partitions: "AC" settings (settings that apply when connected to an AC power source) and "DC" settings (settings that apply on battery power.) This also applies to the lid close event. While other operating systems have more logic around their lid close event to prevent sleeping the device when it is unwanted, Windows simply follows the rules of the currently active power policy, which means closing the lid of a docked laptop with an external mouse, keyboard, and displays will cause it to sleep. This is undesired, but we can do a little better.
 
